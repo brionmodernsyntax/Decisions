@@ -66,4 +66,11 @@
         }
         
     }
+    #red:focus,#yellow:focus,#blue:focus{
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    }
+    
 }

@@ -7,12 +7,6 @@
     box-sizing: border-box;
     
 }
-*:focus{
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
 
 body{
     background: radial-gradient( ellipse at top, #1F3354,#14173A);
