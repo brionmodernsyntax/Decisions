@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive;
+    margin:0;
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient( ellipse at top, #1F3354,#14173A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
