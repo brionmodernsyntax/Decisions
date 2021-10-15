@@ -39,7 +39,12 @@
     #red:active{
         #rock{
             background: linear-gradient(135deg, rgb(121, 9, 9) 50%, rgb(255, 0, 0) 100%);
+            
         }
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
     }
 
     #yellow{
@@ -51,6 +56,10 @@
         #scissors{
             background: linear-gradient(135deg, rgb(121, 114, 9) 50%, rgb(255, 238, 0) 100%);
         }
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
     }
 
     #blue{
@@ -62,6 +71,10 @@
         #paper{
             background: linear-gradient(135deg, rgba(9,9,121,1) 50%, rgb(0, 132, 255) 100%);
         }
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
     }
     
 }
