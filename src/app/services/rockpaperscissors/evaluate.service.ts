@@ -12,6 +12,7 @@ export class EvaluateService {
   private _playerValue: number = 0;
 
   public setResult(){
+    this._cpuValue = Math.floor(Math.random() * 3);
     switch(this._playerValue){
       case 0:
         if(this._cpuValue == 0){
@@ -46,9 +47,6 @@ export class EvaluateService {
     }
   }
 
-  public set cpuValue(value: number){
-    this._cpuValue = value;
-  }
   public set playerValue(value: number){
     this._playerValue = value;
   }
@@ -59,10 +57,6 @@ export class EvaluateService {
 
   public get result(){
     return this._result;
-  }
-
-  public get cpuValue(): number {
-    return this._cpuValue;
   }
 
   public get playerValue(): number {

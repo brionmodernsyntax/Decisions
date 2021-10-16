@@ -13,17 +13,14 @@ export class ControlsComponent implements OnInit {
   }
 
   evaluateRock() {
-    this.evaluate.cpuValue = Math.floor(Math.random() * 3);
     this.evaluate.playerValue = 0;
     this.evaluate.setResult();
   }
   evaluatePaper() {
-    this.evaluate.cpuValue = Math.floor(Math.random() * 3);
     this.evaluate.playerValue = 1;
     this.evaluate.setResult();
   }
   evaluateScissors() {
-    this.evaluate.cpuValue = Math.floor(Math.random() * 3);
     this.evaluate.playerValue = 2;
     this.evaluate.setResult();
   }
