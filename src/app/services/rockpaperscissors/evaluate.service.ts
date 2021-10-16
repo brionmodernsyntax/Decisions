@@ -13,6 +13,7 @@ export class EvaluateService {
 
   public setResult(){
     this._cpuValue = Math.floor(Math.random() * 3);
+    console.log(this._cpuValue);
     switch(this._playerValue){
       case 0:
         if(this._cpuValue == 0){
