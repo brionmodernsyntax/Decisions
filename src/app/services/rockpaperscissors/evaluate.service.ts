@@ -20,7 +20,7 @@ export class EvaluateService {
           this._result = "You Lose!";
         } else if(this._cpuValue == 2){
           this._result = "You Win!";
-          this.score = 100;
+          this.score++;
         }
         break;
         case 1:
