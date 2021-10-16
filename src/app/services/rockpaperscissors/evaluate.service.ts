@@ -12,34 +12,34 @@ export class EvaluateService {
   private _playerValue: number = 0;
 
   public setResult(){
-    switch(this._cpuValue){
+    switch(this._playerValue){
       case 0:
-        if(this._playerValue == 0){
+        if(this._cpuValue == 0){
           this._result = "Tie";
-        }else if(this._playerValue == 1){
+        }else if(this._cpuValue == 1){
+          this._result = "You Lose!";
+        } else if(this._cpuValue == 2){
           this._result = "You Win!";
           this.score++;
-        } else if(this._playerValue == 2){
-          this._result = "You Lose!";
         }
         break;
         case 1:
-        if(this._playerValue == 0){
-          this._result = "You Lose!";
-        }else if(this._playerValue == 1){
-          this._result = "Tie";
-        } else if(this._playerValue == 2){
+        if(this._cpuValue == 0){
           this._result = "You Win!";
           this.score++;
+        }else if(this._cpuValue == 1){
+          this._result = "Tie";
+        } else if(this._cpuValue == 2){
+          this._result = "You Lose!";
         }
         break;
         case 2:
-        if(this._playerValue == 1){
+        if(this._cpuValue == 0){
+          this._result = "You Lose!";
+        }else if(this._cpuValue == 1){
           this._result = "You Win!";
           this.score++;
-        }else if(this._playerValue == 0){
-          this._result = "You Lose!";
-        } else if(this._playerValue == 2){
+        } else if(this._cpuValue == 2){
           this._result = "Tie";
         }
         break;
