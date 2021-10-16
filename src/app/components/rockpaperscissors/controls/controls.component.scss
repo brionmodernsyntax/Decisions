@@ -1,6 +1,7 @@
 *:focus{
     -webkit-tap-highlight-color: transparent;
     outline: none;
+    box-shadow: none;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
